@@ -2,6 +2,7 @@
   "name": "contact-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://localhost:3000/auth",
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.2",
     "@testing-library/jest-dom": "^5.14.1",
