@@ -6,9 +6,13 @@ import UserSearch from '../components/userContact/UserSearch'
 function Contacts() {
     return (
         <div>
+            <div className="navbarPage">
             <NavBar/>
+            </div>
+            <div className="contactsPage">
             <UserSearch/>
             <UserContactBox/>
+            </div>
         </div>
     )
 }

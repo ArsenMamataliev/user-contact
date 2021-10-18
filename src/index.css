@@ -8,27 +8,21 @@ body{
   font-family:'Courier New', Courier, monospace;
 }
 
-.App{
-  width : 80%;
-  min-height: 100%;
-  margin: 0 auto;
-  padding: 5px;
-}
-
 .constactBox{
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
   margin-top: 10px;
+  padding:0;
 }
 
 .contacts{
   border: 1px solid gray;
   box-shadow: 5px 5px 5px gray;
   border-radius: 5px;
-  width: 250px;
+  width: 260px;
   height: 90px;
   margin: 5px;
+  padding: 0;
   transition: 0.5s;
 }
 
@@ -36,21 +30,6 @@ body{
   cursor: pointer;
   margin-top: -1px;
 }
-
-
-open-button {
-  background-color: #555;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  bottom: 23px;
-  right: 28px;
-  width: 280px;
-}
-
 
 /* Add styles to the form container */
 .form-container {
@@ -93,3 +72,23 @@ open-button {
 }
 
 
+.contactsPage{
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 414px) {
+  .contactsPage{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .contacts{
+    width: 95%;
+    height: 60px;
+  }
+  .constactBox{
+    flex-direction: column;
+  }
+
+}

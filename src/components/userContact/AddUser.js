@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import { useDispatch } from 'react-redux';
-import {Button, Modal,InputGroup,FormControl} from 'react-bootstrap';
+import {Button, Modal,FormControl} from 'react-bootstrap';
 import { addContact } from '../../store/userConstactSlice';
 
 function AddUser() {
@@ -24,8 +24,10 @@ function AddUser() {
   
     return (
       <div style={{display:"block"}}>
-        <Button variant="primary" onClick={handleShow}>
-          Add new task
+        <Button variant="primary"
+         style={{marginLeft: "5px"}}
+         onClick={handleShow}>
+          Add
         </Button>
   
         <Modal show={show} onHide={handleClose}>
@@ -33,8 +35,8 @@ function AddUser() {
             <Modal.Title>ADD USER</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-              <InputGroup className="mb-5">
               <FormControl
+                  style={{marginBottom: "5px"}}
                   placeholder="Person name"
                   aria-describedby="basic-addon1"
                   onChange = {savePersonName}
@@ -44,7 +46,6 @@ function AddUser() {
                   aria-describedby="basic-addon1"
                   onChange = {savePhoneNumber}
                   />
-              </InputGroup>
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>
