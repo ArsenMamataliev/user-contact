@@ -7,7 +7,7 @@ import Contacts from "./pages/Contacts";
 function App() {
   return (
      <div className="App">
-      <Router basename="/" >  
+      <Router basename="/auth" >  
         <Switch>
           <Route exact path="/auth" component ={Auth} />
           <Route  path="/contacts" component ={Contacts} />
